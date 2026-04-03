@@ -1,0 +1,236 @@
+.dashboard-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    min-height: 100vh;
+    color: #333;
+}
+
+.dashboard-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.dashboard-nav-title {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #2c3e50;
+    text-transform: capitalize;
+}
+
+.dashboard-user-details {
+    margin-top: 4px;
+}
+
+.dashboard-user-email {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 0.85rem;
+}
+
+.dashboard-nav-role {
+    font-size: 0.75rem;
+    color: #95a5a6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dashboard-logout-btn {
+    padding: 8px 20px;
+    cursor: pointer;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+    font-weight: 600;
+    border-radius: 6px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.dashboard-logout-btn:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.dashboard-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.dashboard-message {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-properties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.dashboard-property-card {
+    border: none;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.dashboard-property-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-favorite-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dashboard-favorite-btn.favorited {
+    background-color: #f1c40f;
+    color: #fff;
+}
+
+/* Favorites Section Styling */
+.dashboard-favorites-section {
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.dashboard-favorites-list {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.dashboard-fav-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.2s;
+}
+
+.dashboard-fav-list-item:last-child {
+    border-bottom: none;
+}
+
+.dashboard-fav-list-item:hover {
+    background-color: #fcfcfc;
+}
+
+.fav-item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.fav-item-title {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.fav-item-location {
+    font-size: 0.8rem;
+    color: #95a5a6;
+}
+
+.dashboard-list-remove-btn {
+    background-color: #ffeded;
+    color: #e74c3c;
+    border: 1px solid #ffcccc;
+    padding: 6px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.dashboard-list-remove-btn:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.empty-msg {
+    list-style: none;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
+ /* Existing styles remain... add these below */
+
+.admin-actions {
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.add-toggle-btn {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-toggle-btn:hover {
+    background-color: #27ae60;
+}
+
+.add-property-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.add-property-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.save-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.save-btn:hover {
+    background-color: #2980b9;
+}
